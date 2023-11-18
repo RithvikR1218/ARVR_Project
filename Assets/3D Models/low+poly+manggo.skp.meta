@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: 035cf09801d0c434e87d6950c0f5f811
+timeCreated: 1510494805
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 82e0b584064cef2445cd82bf114a7604
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 1.2553884, y: 14.003664, z: -47.324104}
+      lookAt: {x: 0.73637605, y: 0.25158322, z: 15.9498}
+      up: {x: -0.0017419901, y: 0.9771878, z: 0.21236973}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes:
+    - camera:
+        position: {x: 8.832512, y: 20.232775, z: -55.647976}
+        lookAt: {x: 8.429408, y: 4.816154, z: 7.241939}
+        up: {x: -0.001526001, y: 0.9712449, z: 0.23807788}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Scene 1
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Component#1
+    100002: Component#1 1
+    100004: Component#1 2
+    100006: Component#1 3
+    100008: Component#1 4
+    100010: Component#1 5
+    100012: Component#3
+    100014: Component#3 1
+    100016: Component#3 2
+    100018: Component#3 3
+    100020: Component#3 4
+    100022: Component#3 5
+    100024: Component#70
+    100026: Component#70 1
+    100028: Component#70 10
+    100030: Component#70 11
+    100032: Component#70 12
+    100034: Component#70 13
+    100036: Component#70 14
+    100038: Component#70 15
+    100040: Component#70 16
+    100042: Component#70 17
+    100044: Component#70 18
+    100046: Component#70 19
+    100048: Component#70 2
+    100050: Component#70 20
+    100052: Component#70 21
+    100054: Component#70 22
+    100056: Component#70 23
+    100058: Component#70 24
+    100060: Component#70 25
+    100062: Component#70 26
+    100064: Component#70 27
+    100066: Component#70 28
+    100068: Component#70 29
+    100070: Component#70 3
+    100072: Component#70 4
+    100074: Component#70 5
+    100076: Component#70 6
+    100078: Component#70 7
+    100080: Component#70 8
+    100082: Component#70 9
+    100084: //RootNode
+    100086: manggo
+    100088: manggo 1
+    100090: manggo 2
+    100092: manggo 3
+    100094: manggo 4
+    100096: manggo 5
+    100098: manggo low poly
+    100100: manggo low poly 1
+    100102: manggo low poly 2
+    100104: manggo low poly 3
+    100106: manggo low poly 4
+    100108: manggo low poly 5
+    400000: Component#1
+    400002: Component#1 1
+    400004: Component#1 2
+    400006: Component#1 3
+    400008: Component#1 4
+    400010: Component#1 5
+    400012: Component#3
+    400014: Component#3 1
+    400016: Component#3 2
+    400018: Component#3 3
+    400020: Component#3 4
+    400022: Component#3 5
+    400024: Component#70
+    400026: Component#70 1
+    400028: Component#70 10
+    400030: Component#70 11
+    400032: Component#70 12
+    400034: Component#70 13
+    400036: Component#70 14
+    400038: Component#70 15
+    400040: Component#70 16
+    400042: Component#70 17
+    400044: Component#70 18
+    400046: Component#70 19
+    400048: Component#70 2
+    400050: Component#70 20
+    400052: Component#70 21
+    400054: Component#70 22
+    400056: Component#70 23
+    400058: Component#70 24
+    400060: Component#70 25
+    400062: Component#70 26
+    400064: Component#70 27
+    400066: Component#70 28
+    400068: Component#70 29
+    400070: Component#70 3
+    400072: Component#70 4
+    400074: Component#70 5
+    400076: Component#70 6
+    400078: Component#70 7
+    400080: Component#70 8
+    400082: Component#70 9
+    400084: //RootNode
+    400086: manggo
+    400088: manggo 1
+    400090: manggo 2
+    400092: manggo 3
+    400094: manggo 4
+    400096: manggo 5
+    400098: manggo low poly
+    400100: manggo low poly 1
+    400102: manggo low poly 2
+    400104: manggo low poly 3
+    400106: manggo low poly 4
+    400108: manggo low poly 5
+    2300000: Component#70
+    2300002: Component#70 1
+    2300004: Component#70 10
+    2300006: Component#70 11
+    2300008: Component#70 12
+    2300010: Component#70 13
+    2300012: Component#70 14
+    2300014: Component#70 15
+    2300016: Component#70 16
+    2300018: Component#70 17
+    2300020: Component#70 18
+    2300022: Component#70 19
+    2300024: Component#70 2
+    2300026: Component#70 20
+    2300028: Component#70 21
+    2300030: Component#70 22
+    2300032: Component#70 23
+    2300034: Component#70 24
+    2300036: Component#70 25
+    2300038: Component#70 26
+    2300040: Component#70 27
+    2300042: Component#70 28
+    2300044: Component#70 29
+    2300046: Component#70 3
+    2300048: Component#70 4
+    2300050: Component#70 5
+    2300052: Component#70 6
+    2300054: Component#70 7
+    2300056: Component#70 8
+    2300058: Component#70 9
+    2300060: manggo
+    2300062: manggo 1
+    2300064: manggo 2
+    2300066: manggo 3
+    2300068: manggo 4
+    2300070: manggo 5
+    3300000: Component#70
+    3300002: Component#70 1
+    3300004: Component#70 10
+    3300006: Component#70 11
+    3300008: Component#70 12
+    3300010: Component#70 13
+    3300012: Component#70 14
+    3300014: Component#70 15
+    3300016: Component#70 16
+    3300018: Component#70 17
+    3300020: Component#70 18
+    3300022: Component#70 19
+    3300024: Component#70 2
+    3300026: Component#70 20
+    3300028: Component#70 21
+    3300030: Component#70 22
+    3300032: Component#70 23
+    3300034: Component#70 24
+    3300036: Component#70 25
+    3300038: Component#70 26
+    3300040: Component#70 27
+    3300042: Component#70 28
+    3300044: Component#70 29
+    3300046: Component#70 3
+    3300048: Component#70 4
+    3300050: Component#70 5
+    3300052: Component#70 6
+    3300054: Component#70 7
+    3300056: Component#70 8
+    3300058: Component#70 9
+    3300060: manggo
+    3300062: manggo 1
+    3300064: manggo 2
+    3300066: manggo 3
+    3300068: manggo 4
+    3300070: manggo 5
+    4300000: Mesh manggo
+    4300002: Mesh Component#70
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MANGGO
+    second: {fileID: 2100000, guid: e6392dace9b8d524cad740def667beab, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
