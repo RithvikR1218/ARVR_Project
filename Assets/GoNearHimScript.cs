@@ -16,20 +16,16 @@ public class GoNearHimScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// if (Input.GetKey("w"))
-        // {
-        //     goThereBox.SetActive(false);
-        //     Camera.transform.localPosition = newTarget.transform.localPosition;
-        //     Camera.transform.localRotation = newTarget.transform.localRotation;
-        //     player.transform.localPosition = player.transform.localPosition + new Vector3(0,0.70f,0);
-        // }
+		if (Input.GetKey("w"))
+        {
+            goThereBox.SetActive(false);
+            Camera.transform.localPosition = newTarget.transform.localPosition;
+            Camera.transform.localRotation = newTarget.transform.localRotation;
+            player.transform.localPosition = player.transform.localPosition + new Vector3(0,0.70f,0);
+
+        }
 	}
-    public void OnButtonPress()
+    void OnTriggerExit(Collider other)
     {
-        goThereBox.SetActive(false);
-        Camera.transform.localPosition = newTarget.transform.localPosition;
-        Camera.transform.localRotation = newTarget.transform.localRotation;
-        player.transform.localPosition = player.transform.localPosition + new Vector3(0,0.70f,0);
-    
     }
 }
