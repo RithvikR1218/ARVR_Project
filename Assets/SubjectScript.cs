@@ -75,40 +75,29 @@ public class SubjectScript : MonoBehaviour {
             else
             {
                 phone.SetActive(false);
-
-                //instructionBackground.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
-                //message = "Good, you remembered to call 911!";
-                //instructionBox.GetComponent<TextMesh>().text = message;
-                //instructionBox.transform.parent.gameObject.SetActive(true);
                 instructionBox.transform.parent.gameObject.SetActive(false);
             }
             if (!is911Called && pumpBox.GetComponent<PumpScriptPractice>().countPump > 0 && !mobileMsgShown)
             {
-                //instructionBackground.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
-                //message = "You forgot to call 911!";
-                //instructionBox.GetComponent<TextMesh>().text = message;
-                //instructionBox.transform.parent.gameObject.SetActive(true);
                 mobileMsgShown = true;
                 StartCoroutine(ShowMessageBad());
             }
-            else if (is911Called && pumpBox.GetComponent<PumpScriptPractice>().countPump > 0)
+            else if (is911Called && pumpBox.GetComponent<PumpScriptPractice>().countPump == 0)
             {
                 cprImage.SetActive(true);
                 continueButton.SetActive(true);
                 compressionRateText.SetActive(true);
-                //instructionBox.transform.parent.gameObject.SetActive(false);
+                background1.GetComponent<TextMesh>().color = Color.white;
+                compressionRateText.GetComponent<TextMesh>().text = "Press Space to Begin";
+            }
+            else if (is911Called && pumpBox.GetComponent<PumpScriptPractice>().countPump > 0)
+            {
                 compressionRateText.GetComponent<TextMesh>().text = "Your Pump Rate=" + pumpBox.GetComponent<PumpScriptPractice>().countPump * 3.0f + "/18 seconds\n" +
                         "Recommended = 30 pumps / 18 sec";
-                //if (pumpBox.GetComponent<PumpScriptPractice>().countPump * 3.0f >= 30)
-                //    background1.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
-                //else
-                //    background1.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
-
                 if (pumpBox.GetComponent<PumpScriptPractice>().countPump * 3.0f >= 30)
                     background1.GetComponent<TextMesh>().color = Color.green;
                 else
                     background1.GetComponent<TextMesh>().color = Color.red;
-
             }
         }
 	}

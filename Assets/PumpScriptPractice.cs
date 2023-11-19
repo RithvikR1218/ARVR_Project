@@ -15,28 +15,22 @@ public class PumpScriptPractice : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (countPump >= 1)
+        if (Input.GetKeyDown("space"))
+        {
+            countPump++;
+        }
+        else if (timeInSec == 6)
+        {
+            time = 0;
+            timeInSec = 0;
+            countPump = 0;
+            Debug.Log("Testing");
+        }
+        else if (countPump >= 1)
         {
             time += Time.deltaTime;
             timeInSec = (int)time;
             Debug.Log(timeInSec);
         }
-        if (timeInSec == 6)
-        {
-
-            time = 0;
-            countPump = 0;
-        }
-        if (Input.GetKeyDown("space"))
-        {
-            countPump++;
-            Debug.Log("PumpCount:" + countPump);
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        
-
     }
 }

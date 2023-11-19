@@ -33,9 +33,4 @@ public class PumpScript : MonoBehaviour {
             Debug.Log("PumpCount:"+countPump);
         }
     }
-
-    void OnTriggerExit(Collider other)
-    {
-
-    }
 }
