@@ -103,11 +103,11 @@ public class TrainingScript : MonoBehaviour {
                     "Recommended = 30 pumps / 18 sec\n" + "Pump along with the beat of the song";
             if (pumpBox.GetComponent<PumpScript>().countPump * 3.0f >= 30)
             {
-                compressionRateText.GetComponent<TextMesh>().color = Color.green;
+                compressionRateText.GetComponent<TextMesh>().color = Color.blue;
             }
             else if (pumpBox.GetComponent<PumpScript>().countPump == 0)
             {
-                compressionRateText.GetComponent<TextMesh>().color = Color.white;
+                compressionRateText.GetComponent<TextMesh>().color = Color.black;
                 compressionRateText.GetComponent<TextMesh>().text = "Press Y to begin";
             }
             else {
