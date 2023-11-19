@@ -21,6 +21,8 @@ public class SubjectScript : MonoBehaviour {
     public GameObject continueButton;
     public GameObject MobileText;
     public AudioSource playerAudio;
+    public AudioClip stayingAlive;
+    public AudioSource cprBoard;
 
     public bool mobileMsgShown=false;
     public AudioClip source1;
@@ -93,7 +95,7 @@ public class SubjectScript : MonoBehaviour {
             else if (is911Called && pumpBox.GetComponent<PumpScriptPractice>().countPump > 0)
             {
                 compressionRateText.GetComponent<TextMesh>().text = "Your Pump Rate=" + pumpBox.GetComponent<PumpScriptPractice>().countPump * 3.0f + "/18 seconds\n" +
-                        "Recommended = 30 pumps / 18 sec";
+                        "Recommended = 30 pumps / 18 sec\n" + "Pump along with the beat of the song";
                 if (pumpBox.GetComponent<PumpScriptPractice>().countPump * 3.0f >= 30)
                     background1.GetComponent<TextMesh>().color = Color.green;
                 else

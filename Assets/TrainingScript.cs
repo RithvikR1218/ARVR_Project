@@ -100,7 +100,7 @@ public class TrainingScript : MonoBehaviour {
         if(flag == 1){
             Debug.Log("Receiving" + pumpBox.GetComponent<PumpScript>().countPump);
             compressionRateText.GetComponent<TextMesh>().text = "Your Pump Rate=" + pumpBox.GetComponent<PumpScript>().countPump * 3.0f + "/18 seconds\n" +
-                    "Recommended = 30 pumps / 18 sec";
+                    "Recommended = 30 pumps / 18 sec\n" + "Pump along with the beat of the song";
             if (pumpBox.GetComponent<PumpScript>().countPump * 3.0f >= 30)
             {
                 compressionRateText.GetComponent<TextMesh>().color = Color.green;
