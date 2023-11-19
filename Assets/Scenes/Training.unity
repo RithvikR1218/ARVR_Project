@@ -3031,7 +3031,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1571213709}
-  m_Text: Continue
+  m_Text: Press 3 to continue
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 2

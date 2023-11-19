@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TrainingScript : MonoBehaviour {
 
 
-    string message = "Hello, we will be learning how to perform CPR today.\nPlease touch button below to continue.";
+    string message;
     public GameObject triggerBox;
     //private int countPump = 0;
     public GameObject pumpBox;
@@ -32,6 +32,13 @@ public class TrainingScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        message = "Welcome to the CPR Training room\n" + 
+        "Here you will be learning everything\n"+ 
+        "there is to know about CPR\n" + 
+        "Everything fom what to do if someone has fainted\n" +
+        "and how to administer CPR to\n"+
+        "maximize the victims chance of survival\n" +
+        "<b>Press 1 to start the simulation</b>\n";
         pumpBox.SetActive(false);
         cprImage.SetActive(false);
         handAnim.SetActive(false);
@@ -47,7 +54,8 @@ public class TrainingScript : MonoBehaviour {
         {
             message = "Check the victim for unresponsiveness. \nIf the person is not responsive and \nnot breathing or not breathing normally.\n" +
                 "Call 911 and return to the victim.\n If possible bring the phone next to the person\nand place on speaker mode.\n " +
-                "In most locations the emergency dispatcher can\nassist you with CPR instructions.\n";
+                "In most locations the emergency dispatcher can\nassist you with CPR instructions.\n" +
+                "<b>Press 2 to continue</b>";
             if (!audio2Played)
             {
                 audioSource.clip = source2;
@@ -58,10 +66,14 @@ public class TrainingScript : MonoBehaviour {
         } else if (Input.GetKey("2"))
         {
             cprImage.SetActive(true);
+            message = "If the victim is still not breathing normally, coughing\n" +
+            "or moving, begin chest compressions.\n" +
+            "Push down in the center of the chest as shown\n" +
+            "in the image 2-2.4 inches 30 times.\n" +
+            "Pump hard and fast at the rate of\n"+
+            "100-120/minute, faster than once per second.\n" + 
+            "<b>Start Performing CPR </b>\n";
             flag = 1;
-            message = "If the victim is still not breathing normally, coughing\n or moving, begin chest compressions.\n" +
-                "Push down in the center of the chest as shown\n in the image 2-2.4 inches 30 times.\n" +
-                "Pump hard and fast at the rate of\n 100-120/minute, faster than once per second.";
             pumpBox.SetActive(true);
             if (!audio3Played)
             {
@@ -74,11 +86,6 @@ public class TrainingScript : MonoBehaviour {
                 handAnim.SetActive(true);
                 StartCoroutine(PlayHandAnimation());
             }
-            // Debug.Log("Receiving" + pumpBox.GetComponent<PumpScript>().countPump);
-            // compressionRateText.GetComponent<TextMesh>().text = "Your Pump Rate=" + pumpBox.GetComponent<PumpScript>().countPump * 3.0f + "/18 seconds\n" +
-            //         "Recommended = 30 pumps / 18 sec";
-
-            // message = "Start Performing CPR \n\n"+"Press continue when done.";
             if (!audio4Played)
             {
                 audioSource.clip = source4;
@@ -94,11 +101,20 @@ public class TrainingScript : MonoBehaviour {
             Debug.Log("Receiving" + pumpBox.GetComponent<PumpScript>().countPump);
             compressionRateText.GetComponent<TextMesh>().text = "Your Pump Rate=" + pumpBox.GetComponent<PumpScript>().countPump * 3.0f + "/18 seconds\n" +
                     "Recommended = 30 pumps / 18 sec";
-
-            message = "Start Performing CPR \n\n"+"Press continue when done.";
+            if (pumpBox.GetComponent<PumpScript>().countPump * 3.0f >= 30)
+            {
+                compressionRateText.GetComponent<TextMesh>().color = Color.green;
+            }
+            else if (pumpBox.GetComponent<PumpScript>().countPump == 0)
+            {
+                compressionRateText.GetComponent<TextMesh>().color = Color.white;
+                compressionRateText.GetComponent<TextMesh>().text = "Press Y to begin";
+            }
+            else {
+                compressionRateText.GetComponent<TextMesh>().color = Color.red;
+            }
         }
         instructionBox.GetComponent<TextMesh>().text = message;
-
     }
 
 
