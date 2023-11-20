@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 419420313}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -822,10 +822,10 @@ MonoBehaviour:
   continueButton: {fileID: 1011864526}
   MobileText: {fileID: 2039122088}
   playerAudio: {fileID: 1075797879}
-  stayingAlive: {fileID: 0}
-  cprBoard: {fileID: 0}
+  stayingAlive: {fileID: 8300000, guid: fcd151826c49c8142b56ba94c9234c86, type: 3}
+  cprBoard: {fileID: 1318998934}
   mobileMsgShown: 0
-  source1: {fileID: 8300000, guid: 6619977863705214faf5686f6ad964c7, type: 3}
+  source1: {fileID: 8300000, guid: 7cf3431f4fb7e2e439ca4482ed766f18, type: 3}
 --- !u!136 &606259017
 CapsuleCollider:
   m_ObjectHideFlags: 0
