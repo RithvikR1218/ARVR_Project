@@ -5152,10 +5152,9 @@ MonoBehaviour:
   handAnim: {fileID: 885100761}
   compressionRateText: {fileID: 198959210}
   audioSource: {fileID: 791436662}
-  source1: {fileID: 8300000, guid: 157980df3c8f90747b5573cbf05e6d8f, type: 3}
-  source2: {fileID: 8300000, guid: eaacfd1ffb3e3e14fab4bc4491eb08ae, type: 3}
+  source1: {fileID: 8300000, guid: a5bf8dca6ab90674b9ecb1c0f4737e57, type: 3}
+  source2: {fileID: 8300000, guid: 7d231601ab66d7d43a1c6c7c39b3ce58, type: 3}
   source3: {fileID: 8300000, guid: 03e2030199c12904c8e092820943c0cf, type: 3}
-  source4: {fileID: 8300000, guid: e45945c69fef89c4592ff22d37ab16fb, type: 3}
   flag: 0
 --- !u!1 &2088040471
 GameObject:

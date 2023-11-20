@@ -30,7 +30,8 @@ public class SubjectScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        message = "Today you will be practicing performing CPR in real life scenarios. Look around and see if somebody needs your help.";
+        message = "Today you will be practicing performing CPR in real life scenarios. " + 
+        "Look around and see if somebody needs your help.";
         playerAudio.clip = source1;
         playerAudio.Play();
         thisAnimator = this.gameObject.GetComponent<Animator>();
@@ -86,10 +87,12 @@ public class SubjectScript : MonoBehaviour {
             }
             else if (is911Called && pumpBox.GetComponent<PumpScriptPractice>().countPump == 0)
             {
+                cprBoard.clip = stayingAlive;
+                cprBoard.Play();
                 cprImage.SetActive(true);
                 continueButton.SetActive(true);
                 compressionRateText.SetActive(true);
-                background1.GetComponent<TextMesh>().color = Color.white;
+                background1.GetComponent<TextMesh>().color = Color.black;
                 compressionRateText.GetComponent<TextMesh>().text = "Press Space to Begin";
             }
             else if (is911Called && pumpBox.GetComponent<PumpScriptPractice>().countPump > 0)

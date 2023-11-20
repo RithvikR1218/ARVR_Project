@@ -5,8 +5,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TrainingScript : MonoBehaviour {
-
-
     string message;
     public GameObject triggerBox;
     //private int countPump = 0;
@@ -19,9 +17,6 @@ public class TrainingScript : MonoBehaviour {
     public AudioClip source1;
     public AudioClip source2;
     public AudioClip source3;
-    public AudioClip source4;
-    
-
 
     bool isHandAnimationShownOnce = false;
     bool audio2Played = false;
@@ -35,9 +30,8 @@ public class TrainingScript : MonoBehaviour {
         message = "Welcome to the CPR Training room\n" + 
         "Here you will be learning everything\n"+ 
         "there is to know about CPR\n" + 
-        "Everything fom what to do if someone has fainted\n" +
-        "and how to administer CPR to\n"+
-        "maximize the victims chance of survival\n" +
+        "Everything on what to do if someone has fainted\n" +
+        "to maximize the victims chance of survival\n" +
         "<b>Press 1 to start the simulation</b>\n";
         pumpBox.SetActive(false);
         cprImage.SetActive(false);
@@ -52,10 +46,12 @@ public class TrainingScript : MonoBehaviour {
 
         if(Input.GetKey("1"))
         {
-            message = "Check the victim for unresponsiveness. \nIf the person is not responsive and \nnot breathing or not breathing normally.\n" +
-                "Call 911 and return to the victim.\n If possible bring the phone next to the person\nand place on speaker mode.\n " +
-                "In most locations the emergency dispatcher can\nassist you with CPR instructions.\n" +
-                "<b>Press 2 to continue</b>";
+            message = "Check the victim for unresponsiveness. \n"+
+            "If the person is not responsive\n"+
+            "and/or not breathing normally,\n" +
+            "call 911 and return to the victim.\n"+
+            "In most locations the emergency dispatcher can\nassist you with CPR instructions.\n" +
+            "<b>Press 2 to continue</b>";
             if (!audio2Played)
             {
                 audioSource.clip = source2;
@@ -75,22 +71,16 @@ public class TrainingScript : MonoBehaviour {
             "<b>Start Performing CPR </b>\n";
             flag = 1;
             pumpBox.SetActive(true);
-            if (!audio3Played)
-            {
-                audioSource.clip = source3;
-                audioSource.Play();
-                audio3Played = true;
-            }
+            // if (!audio3Played)
+            // {
+            //     audioSource.clip = source3;
+            //     audioSource.Play();
+            //     audio3Played = true;
+            // }
             if (!isHandAnimationShownOnce && !handAnim.activeInHierarchy)
             {
                 handAnim.SetActive(true);
                 StartCoroutine(PlayHandAnimation());
-            }
-            if (!audio4Played)
-            {
-                audioSource.clip = source4;
-                audioSource.Play();
-                audio4Played = true;
             }
         }
         else if (Input.GetKey("3"))
